@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.ashu.contactlistview.MainActivity"
+    android:background="#FFF9C4"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:text="Click Here to load Contacts" />
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/activeMember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />-->
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/activeMember"
+            android:layout_below="@+id/button1" />
+
+        <TextView
+            android:id="@+id/Label"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:layout_below="@+id/activeMember"
+            android:text="Inactive member List"
+            android:textSize="24sp" />
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/inActiveMember"
+            android:layout_below="@+id/Label" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            />
+    </LinearLayout>
+
+</ScrollView>
